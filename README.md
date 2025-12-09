@@ -12,13 +12,16 @@ The AAP (Ansible Automation Platform) Anonymized Metrics Storage Service acts as
 The following diagram shows how the components connect and data flows through the system:
 
 ```mermaid
+---
+title: AAP Anonymized Metrics Storage Service
+---
 flowchart TB
     subgraph "Client Applications"
         Client[Segment.io Client]
     end
     
     subgraph "AAP Metrics Service"
-        Service[AAP Anonymized Metrics Storage Service]
+        Service[Segment.io]
     end
     
     subgraph "AWS"
