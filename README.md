@@ -43,10 +43,9 @@ flowchart TB
 
 ## Data Flow
 
-1. **Collection**: Segment.io clients collect metrics from various sources
-2. **Transmission**: Metrics are sent to the AAP Anonymized Metrics Storage Service
-3. **Anonymization**: The service processes and anonymizes the incoming data
-4. **Storage**: Anonymized metrics are stored in an AWS S3 bucket
-5. **Processing**: Stored data can be retrieved and processed for analytics and insights
+1. **Collection**: Segment.io clients collect and anonymize metrics from various sources
+2. **Transmission**: Metrics are sent to Segment.io
+3. **Storage**: Anonymized metrics are stored in an AWS S3 bucket
+4. **Processing**: Stored data can be retrieved and processed for analytics and insights
 
 
