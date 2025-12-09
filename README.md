@@ -48,4 +48,23 @@ flowchart TB
 3. **Storage**: Anonymized metrics are stored in an AWS S3 bucket
 4. **Processing**: Stored data can be retrieved and processed for analytics and insights
 
+## Development Setup
+
+### Create Virtual Environment
+
+Create a virtual environment using uv:
+
+```bash
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+### Install Dependencies
+
+Install the required Python packages using uv:
+
+```bash
+uv pip install -r requirements.txt
+```
+
 
