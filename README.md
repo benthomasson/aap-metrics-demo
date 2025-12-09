@@ -67,4 +67,18 @@ Install the required Python packages using uv:
 uv pip install -r requirements.txt
 ```
 
+### Run the Demo
+
+1. **Set your Segment write key**:
+   ```bash
+   export SEGMENT_WRITE_KEY=your_segment_write_key_here
+   ```
+
+2. **Run the Python demo**:
+   ```bash
+   python segment_client_example.py
+   ```
+
+   This will demonstrate sending anonymized AAP metrics to Segment.io including playbook executions, inventory syncs, and dashboard views.
+
 

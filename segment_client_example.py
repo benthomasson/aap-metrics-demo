@@ -6,7 +6,7 @@ This example demonstrates how to use the Segment.io Python library to send
 anonymized metrics that will be stored in AWS S3 through the AAP service.
 """
 
-import analytics
+import segment.analytics as analytics
 import os
 import uuid
 from datetime import datetime
