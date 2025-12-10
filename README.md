@@ -1,5 +1,5 @@
 
-# AAP Metrics Demo
+# AAP Anonymized Metrics Storage Demo
 
 A demo of how to use the AAP Anonymized Metrics Storage Service
 
