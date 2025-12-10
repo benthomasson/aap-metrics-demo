@@ -97,14 +97,63 @@ python segment_client_example.py
 - **"Tracked multiple AAP-related events"**
 - **"Sent all events to Segment.io"**
 
+## S3 Data Review (60 seconds)
+
+**"Now let's examine what the actual stored data looks like in S3 from a previous run."**
+
+*[Switch to AWS Console or show a JSON file with sample data]*
+
+**"Here's an example of the JSON data that gets stored in our S3 bucket:"**
+
+*[Show/scroll through sample JSON data]*
+
+```json
+{
+  "userId": "anon_a1b2c3d4",
+  "event": "Playbook Executed",
+  "properties": {
+    "playbook_size": "medium",
+    "execution_time_ms": 2500,
+    "success": true,
+    "environment": "production",
+    "timestamp": "2024-12-10T15:30:45.123Z",
+    "session_id": "550e8400-e29b-41d4-a716-446655440000",
+    "anonymized": true
+  },
+  "context": {
+    "library": {
+      "name": "analytics-python",
+      "version": "2.3.3"
+    }
+  },
+  "messageId": "ajs-f12ca4dd15",
+  "timestamp": "2024-12-10T15:30:45.123Z"
+}
+```
+
+**"Notice several key aspects of this stored data:"**
+
+- **"All user identifiers are anonymous - no real usernames or emails"**
+- **"We capture operational metrics like execution time and success rates"**
+- **"Session IDs allow us to group related activities without identifying users"**
+- **"Timestamps enable time-series analysis of usage patterns"**
+- **"The 'anonymized' flag clearly marks this as privacy-safe data"**
+
+**"This anonymized data enables valuable insights like:"**
+- **"Most common playbook sizes and patterns"**
+- **"Average execution times for performance optimization"**
+- **"Success rates across different environments"**
+- **"Usage trends over time"**
+
+**"All while maintaining complete user privacy and GDPR compliance."**
+
 ## Conclusion (30 seconds)
 
 **"This demonstrates how the AAP Anonymized Metrics Storage Service enables:"**
 
 - **"Privacy-first metrics collection"**
 - **"Seamless integration with existing AAP workflows"**
-- **"Scalable storage and processing through AWS S3"**
-- **"Real-time analytics capabilities through Segment.io"**
+- **"Scalable storage using AWS S3"**
 
 **"The anonymized data helps improve AAP while protecting user privacy. Thank you for watching this demonstration."**
 
